@@ -9,7 +9,7 @@
   --muted: #6b6b6b;
   --border: #e0e0e0;
   --accent: #ffffff;       /* mild grönblå accent */
-  --accent-hover: #f6f6f6;
+  --accent-hover: #f6f5f5;
   --radius: 12px;
   --shadow: 0 4px 12px rgba(0,0,0,0.08);
   --max-width: 1100px;
@@ -68,37 +68,22 @@ header a:hover {
 }
 
 /* ================================
-   Hero (mysig BokNästet-stil)
+   Hero (content)
    ================================ */
 .content {
-  position: relative;
+  background: url('../img/hero-boknastet.png') center/cover no-repeat;
   text-align: center;
   padding: 120px 20px;
-  color: #1f1f1f;
-  overflow: hidden;
-  border-radius: 0 0 12px 12px;
-
-  /* Hero-bild */
-  background:
-    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.9)),  /* ljus transparent överlagring */
-    url('img/hero-boknastet.png') center center no-repeat;
-  background-size: auto 100%; /* låt bilden behålla proportioner */
-  background-position: center center;
+  color: #fff;
+  position: relative;
+  border-radius: 0 0 var(--radius) var(--radius);
 }
 
-/* Gör så att bilden inte fyller hela bredden på stora skärmar */
-@media (min-width: 1000px) {
-  .content {
-    background-size: contain;  /* visa hela bilden utan att sträcka ut */
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;             /* bestäm höjd */
-    padding: 0;                /* centrera texten vertikalt */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
 }
 
 .content h1,
@@ -117,7 +102,6 @@ header a:hover {
   max-width: 700px;
   margin: 16px auto 0;
   font-weight: 400;
-  color: #555;
 }
 
 /* ================================
