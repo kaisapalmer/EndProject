@@ -23,29 +23,43 @@
 </head>
 
 <body>
-<!-- Creates a header -->
+<!-- Creates a header with class "header"-->
 <header>
-  <!-- Creates a main titel that says "BokNästet" -->
-  <h1>BokNästet</h1>
-  <!-- Creates a smaller titel -->
-  <h3>Väkommen till BokNästet! Här kan du hitta din nästa favoritbok genom att söka på titel, gener eller
-    författare.</h3>
+  <!-- Creates a div with class "info" -->
+  <div class="info">
+    <!-- Creates a navbar -->
+    <nav>
+      <img src="BokNästet.png" height="100" width="100" alt="BokNästet" class="logo"/>
+      <a href="/">Hem</a>
+      <a href="/">Upptäck</a>
+      <a href="/about">Om oss</a>
+      <a href="/contact">Kontakt</a>
+    </nav>
+  </div>
 </header>
+  <!-- Creates a div with class "content" -->
+  <div class="content">
+    <!-- Creates a main titel that says "BokNästet" -->
+    <h1>BokNästet</h1>
+    <!-- Creates a smaller titel -->
+    <h3>Väkommen till BokNästet! Här kan du hitta din nästa favoritbok genom att söka på titel, gener eller
+      författare.</h3>
+  </div>
 
 <div class="wrapper">
   <div id="search-form">
     <label>
-      <!-- Creates a input -->
+      <!-- Creates an input -->
       <input type="text" id="title" placeholder="Sök böcker">
     </label>
     <!-- Creates a button with the id "searchButton" -->
     <button id="searchButton">Sök</button>
     <!-- Creates a navbar -->
     <nav>
-      <a href="">Topplistan</a>
-      <a href="">Biografi</a>
-      <a href="">Romantik</a>
-      <a href="">Thriller</a>
+      <a href="/">Topplistan</a>
+      <a href="/">Biografi</a>
+      <a href="/">Romantik</a>
+      <a href="/">Thriller</a>
     </nav>
   </div>
 </div>

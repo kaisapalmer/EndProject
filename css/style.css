@@ -17,6 +17,27 @@ html {
   line-height: 1.4;
 }
 
+header {
+  display: flex;
+  align-items: flex-end; /* gör att texten hamnar i botten av bilden */
+  gap: 20px; /* mellanrum mellan logga och länkar */
+}
+
+.logo {
+  height: 80px; /* justera storlek efter behov */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.content{
+  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfsc13xaTCaXlzeEdv3CtlUgwLDiiplh3RNLu4Lv-UE27FOPhd8wFhNMjx8rZ3Q6IWzqWOKDPUkop7Aoo1WYeDNg33Yd8nrQOBsXTeSHv-ZP3qWHbxE-tcU_QksHKHqKAKrw2zRxAch8MkLSyUBwar64_RaiQDhszJNrk-3imtTQqdEb9qF7r1aav1ZeJbquqBMXoC1nJNAXyFdOLN-HZZmCIlYGu6Vv5CBEyR8Lp4R_4i_Nj9oepu9UdZcCcR8_AYvCgT0whRqcg');
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
