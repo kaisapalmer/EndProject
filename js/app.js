@@ -16,6 +16,9 @@ searchButton.addEventListener('click', async () => {
   /* Creates a loop that display all matching book titles from the user's input */
   for (let i = 0; i < books.length; i++) {
     const book = books[i];
+    let image = document.createElement("img");
+    image.src = `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`;
+    searchResult.append(image);
     let paragraph = document.createElement("p");
     paragraph.innerText = book.title;
     searchResult.append(paragraph);
