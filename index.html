@@ -27,10 +27,10 @@
     <!-- Creates a navbar -->
     <nav>
       <img src="BokNästet.png" height="100" width="100" alt="BokNästet" class="logo"/>
-      <a href="/">Hem</a>
-      <a href="/">Upptäck</a>
-      <a href="/about">Om oss</a>
-      <a href="/contact">Kontakt</a>
+      <a href="#">Hem</a>
+      <a href="#">Upptäck</a>
+      <a href="#">Om oss</a>
+      <a href="#">Kontakt</a>
     </nav>
   </div>
 </header>
@@ -52,26 +52,31 @@
     </div>
     <!-- Creates a navbar -->
     <nav class="nav">
-      <a href="/">Topplistan</a>
-      <a href="/">Biografi</a>
-      <a href="/">Romantik</a>
-      <a href="/">Thriller</a>
+      <a href="#">Topplistan</a>
+      <a href="#">Biografi</a>
+      <a href="#">Romantik</a>
+      <a href="#">Thriller</a>
     </nav>
 
 </div>
 
 <div id="results">
-  <!--
-  Mall för hur en bok ser ut, för att enklare skapa JavaScriptet ..
-  <div class="book-card">
-    <img src="https://covers.openlibrary.org/b/id/10523466-M.jpg" alt="book cover">
-    <div class="body">
-      <div class="title">Harry Potter</div>
-      <div class="meta">J.K. Rowling</div>
-      <button>Köp</button>
+  <!-- sökresultat hamnar här från app.js -->
+</div>
+
+<!-- Hidden modal -->
+<div id="bookModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-body">
+      <img id="bookCover" src="" alt="Book Cover" />
+      <div class="book-info">
+        <h2 id="bookTitle"></h2>
+        <h4 id="bookAuthor"></h4>
+        <p id="bookDescription"></p>
+      </div>
     </div>
   </div>
-  -->
 </div>
 
 <script src="js/app.js"></script>
